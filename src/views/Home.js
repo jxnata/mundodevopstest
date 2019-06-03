@@ -35,11 +35,9 @@ export default class Home extends Component {
             <View style={styles.theme.container}>
                 <StatusBar backgroundColor={styles.colors.secondary} barStyle="light-content"/>
                 <Separator marginTop={10} marginBottom={10}/>
-                {/* { this.state.data.filters.length > 0 &&( */}
                     <View style={styles.theme.box}>
                     <ListFilters filters={this.state.data.filters} checkeds={this.state.checkeds} onPress={param => this.filter(param)}/>
                 </View>
-                {/* )} */}
                 <Separator marginBottom={10} line={false}/>
                 <ListExercices exercices={this.state.data.exercices}/>
             </View>
