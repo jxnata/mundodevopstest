@@ -20,7 +20,7 @@ const AppStack = createStackNavigator(
                     </TouchableOpacity>
                 ),
                 headerTitle: (
-                    <Text style={styles.theme.headerSubtitle}>MEU PERFIL</Text>
+                    <Text style={styles.theme.headerTitle}>MEU PERFIL</Text>
                 ),
                 headerRight: (
                     <TouchableOpacity style={styles.theme.btnHeader} onPress={() => null}>

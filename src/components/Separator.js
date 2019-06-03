@@ -6,7 +6,7 @@ const Separator = props => {
     const { marginTop = 0, marginBottom = 0, line = true } = props;
     return (
         <View style={{
-            borderBottomColor: line ? styles.colors.light : 'transparent',
+            borderBottomColor: line ? styles.colors.secondary : 'transparent',
             borderBottomWidth: 1,
             marginTop:marginTop,
             marginBottom: marginBottom}}
