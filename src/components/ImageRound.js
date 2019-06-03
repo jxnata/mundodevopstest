@@ -6,10 +6,10 @@ import styles from '../styles';
 import config from '../config';
 
 const ImageRound = props => {
-    const { image, checked = false, action } = props;
+    const { image, name, checked = false, onPress } = props;
 
     return (
-        <TouchableOpacity style={styles.theme.iconDefault} onPress={action}>
+        <TouchableOpacity style={styles.theme.iconDefault} onPress={() => onPress(name)}>
             {checked && (
                 <View style={styles.theme.iconCheck}>
                     <Icon name="check" size={16} backgroundColor={styles.colors.green} color={styles.colors.light} />

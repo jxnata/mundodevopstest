@@ -10,7 +10,7 @@ const ListFilters = props => {
         {filters.map((item, index) => {
             var check = checkeds.indexOf(item.name) >= 0 ? true : false;
             return (
-                <ImageRound image={item.image} checked={check} key={index}/>
+                <ImageRound image={item.image} name={item.name} checked={check} onPress={onPress} key={index}/>
             ) 
         })}
         </ScrollView>

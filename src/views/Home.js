@@ -13,7 +13,7 @@ export default class Home extends Component {
 
         this.state = {
             data: {filters: [], exercices: []},
-            checkeds: ['Yoga'],
+            checkeds: ['Yoga', 'Lower Body'],
             loading: false,
 		}
     }
@@ -21,6 +21,12 @@ export default class Home extends Component {
 	async componentDidMount()
 	{
         this.setState({data});
+    }
+    filter(tipo) {
+        let array = this.state.checkeds;
+        let index = array.indexOf(tipo)
+        index >= 0 ? array.splice(index, 1) : array.push(tipo);
+        this.setState({checkeds: array});
     }
 
 	render() {
@@ -30,7 +36,7 @@ export default class Home extends Component {
                 <Separator marginTop={10} marginBottom={10}/>
                 { this.state.data.filters.length > 0 &&(
                     <View style={styles.theme.box}>
-                    <ListFilters filters={this.state.data.filters} checkeds={this.state.checkeds}/>
+                    <ListFilters filters={this.state.data.filters} checkeds={this.state.checkeds} onPress={param => this.filter(param)}/>
                 </View>
                 )}
                 <Separator marginBottom={10} line={false}/>

@@ -9,9 +9,9 @@ const ListExercicesItem = props => {
     const { exercice, action } = props;
 
     return (
-        <View style={{paddingVertical: 20}}>
+        <View style={{paddingVertical: 15}}>
             <TouchableOpacity style={styles.theme.box} onPress={action}>
-                <View style={{flexDirection: 'row', paddingHorizontal: 15}}>
+                <View style={{flexDirection: 'row', paddingHorizontal: 15, paddingVertical: 10}}>
                     <ImageExercice image={exercice.image} />
                     <View style={{marginLeft: 20, alignSelf:'center'}}>
                         <Text style={styles.theme.blockTitle}>{exercice.name.toUpperCase()}</Text>
