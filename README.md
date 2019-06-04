@@ -9,7 +9,7 @@ Bibliotecas utilizadas:
 
 - React Navigation: Header e navegação. Facilita a criação de menus, abas e a navegação em geral do app.
 - React Native Vector Icons: Pacote de ícones para o app, uma mão na roda.
-- React- Native Linear Gradient: Biblioteca de criação de gradientes, muito útil para deixar o app com visual moderno.
+- React Native Linear Gradient: Biblioteca de criação de gradientes, muito útil para deixar o app com visual moderno.
 
 Desenvolvimento do app:
 
